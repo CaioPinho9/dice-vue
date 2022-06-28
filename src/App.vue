@@ -37,7 +37,7 @@ export default {
 
   h1 {
     text-align: center;
-    font-size: 42px;
+    font-size: 40px;
     margin-bottom: 30px;
     color: #fff;
   }
