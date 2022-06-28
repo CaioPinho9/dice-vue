@@ -1,7 +1,7 @@
 <template>
   <NavBar :logo="logo_src" :alt="logo_alt" />
-  <Footer />
   <router-view/>
+  <Footer />
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       logo_src: "/img/logo.png",
-      app_name: "Make Your Burger"
+      app_name: "Dice Forge"
     }
   }
 }
@@ -39,11 +39,11 @@ export default {
     text-align: center;
     font-size: 42px;
     margin-bottom: 30px;
-    color: #222;
+    color: #fff;
   }
 
   body {
-    background-color: #afafaf;
+    background-color: #152238;
   }
 
 

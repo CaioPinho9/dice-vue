@@ -32,12 +32,20 @@ export default {
     }
 
     #logo {
-        width: 40px;
-        height: 40px;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        transition: .5s;
+
+    }
+
+    #logo:hover {
+        transform: scale(1.2)
+
     }
 
     #nav a,p {
-        color: #FCBA03;
+        color: #1496de;
         text-decoration: none;
         margin: 12px;
         transition: .5s;
