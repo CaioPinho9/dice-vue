@@ -19,7 +19,7 @@ export default {
 <style scoped>
     #nav {
         background-color: #222;
-        border-bottom: 4px solid #1496de;
+        border-bottom: 4px solid #ff8800 ;
         padding: 15px 50px;
         display: flex;
         align-items: center;
@@ -45,7 +45,7 @@ export default {
     }
 
     #nav a,p {
-        color: #1496de;
+        color: #ff8800 ;
         text-decoration: none;
         margin: 12px;
         transition: .5s;

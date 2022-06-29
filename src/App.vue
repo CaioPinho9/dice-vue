@@ -43,7 +43,7 @@ export default {
   }
 
   body {
-    background-color: #152238;
+    background-color: #8d2d00 ;
   }
 
 

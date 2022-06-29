@@ -54,9 +54,10 @@ export default {
     max-width: 400px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #fff;
-    border: 4px solid #1496de;
+    background-color: #333;
+    border: 4px solid #ff8800;
     border-radius: 10px;
+    color: #ff8800;
 }
 
   .input-container{
@@ -69,12 +70,15 @@ export default {
     font-weight: bold;
     margin-bottom: 15px;
     padding: 5px 10px;
-    border-left: 4px solid #1496de;
+    border-left: 4px solid #ff8800;
   }
 
   input, select {
     width: 100%;
     padding: 5px 10px;
+    background-color: #555;
+    border: 1px solid #ff8800;
+    color: #ff8800;
   }
 
   #optional-container {
@@ -100,5 +104,23 @@ export default {
   .checkbox-container span {
     margin-left: 6px;
 
+  }
+
+  .submit-btn {
+    background-color: #222;
+    color: #ff8800;
+    font-weight: bold;
+    border: 2px solid #222;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .submit-btn:hover {
+    background-color: #ff8800;
+    border: 2px solid #ff8800;
+    color: #fff;
   }
 </style>

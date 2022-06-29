@@ -29,7 +29,7 @@ export default {
 
   h1 {
     color: #fff;
-    text-shadow: 3px 3px 10px rgb(255, 136, 0);
+    text-shadow: 3px 3px 10px #ff8800;
     font-size: 70px;
     margin: 0px;
   }

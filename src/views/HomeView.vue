@@ -23,6 +23,6 @@ export default {
 
 <style scoped>
   h1 {
-      text-shadow: 2px 2px 7px #1496de;
+      text-shadow: 2px 2px 7px #ff8800;
   }
 </style>

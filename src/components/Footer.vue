@@ -18,8 +18,8 @@ export default {
     #footer {
         height: 70px;
         background-color: #222;
-        border-top: 4px solid #1496de;
-        color: #1496de;
+        border-top: 4px solid #ff8800 ;
+        color: #ff8800 ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,7 +29,7 @@ export default {
     }
 
     a {
-        color: #1496de;
+        color: #ff8800 ;
         text-decoration: none;
         margin: 12px;
         transition: .5s;
