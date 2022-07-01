@@ -1,81 +1,157 @@
 {
-    "ingredientes": {
-      "paes": [
-        {
-          "id": 1,
-          "tipo": "Italiano Branco"
-        },
-        {
-          "id": 2,
-          "tipo": "3 Queijos"
-        },
-        {
-          "id": 3,
-          "tipo": "Parmesão e Orégano"
-        },
-        {
-          "id": 4,
-          "tipo": "Integral"
-        }
-      ],
-      "carnes": [
-        {
-          "id": 1,
-          "tipo": "Maminha"
-        },
-        {
-          "id": 2,
-          "tipo": "Alcatra"
-        },
-        {
-          "id": 3,
-          "tipo": "Picanha"
-        },
-        {
-          "id": 4,
-          "tipo": "Veggie burger"
-        }
-      ],
-      "opcionais": [
-        {
-          "id": 1,
-          "tipo": "Bacon"
-        },
-        {
-          "id": 2,
-          "tipo": "Cheddar"
-        },
-        {
-          "id": 3,
-          "tipo": "Salame"
-        },
-        {
-          "id": 4,
-          "tipo": "Tomate"
-        },
-        {
-          "id": 4,
-          "tipo": "Cebola roxa"
-        },
-        {
-          "id": 4,
-          "tipo": "Pepino"
-        }
-      ]
-    },
-    "status": [
+  "details": {
+    "numbers": [
       {
         "id": 1,
-        "tipo": "Solicitado"
+        "tipo": "d4"
       },
       {
         "id": 2,
-        "tipo": "Em produção"
+        "tipo": "d6"
       },
       {
         "id": 3,
-        "tipo": "Finalizado"
+        "tipo": "d8"
+      },
+      {
+        "id": 4,
+        "tipo": "d10"
+      },
+      {
+        "id": 5,
+        "tipo": "d12"
+      },
+      {
+        "id": 6,
+        "tipo": "d20"
+      },
+      {
+        "id": 7,
+        "tipo": "d100"
+      },
+      {
+        "id": 8,
+        "tipo": "Conjunto Completo"
       }
     ],
-    "burgers": []
-  }
+    "colors": [
+      {
+        "id": 1,
+        "tipo": "Preto"
+      },
+      {
+        "id": 2,
+        "tipo": "Cinza"
+      },
+      {
+        "id": 3,
+        "tipo": "Branco"
+      },
+      {
+        "id": 4,
+        "tipo": "Rosa"
+      },
+      {
+        "id": 5,
+        "tipo": "Roxo"
+      },
+      {
+        "id": 6,
+        "tipo": "Lilás"
+      },
+      {
+        "id": 7,
+        "tipo": "Azul"
+      },
+      {
+        "id": 8,
+        "tipo": "Verde"
+      },
+      {
+        "id": 9,
+        "tipo": "Amarelo"
+      },
+      {
+        "id": 10,
+        "tipo": "Laranja"
+      },
+      {
+        "id": 11,
+        "tipo": "Vermelho"
+      },
+      {
+        "id": 12,
+        "tipo": "Dourado"
+      }
+    ],
+    "materials": [
+      {
+        "id": 1,
+        "tipo": "Plástico"
+      },
+      {
+        "id": 2,
+        "tipo": "Metálico"
+      },
+      {
+        "id": 3,
+        "tipo": "Vidro"
+      },
+      {
+        "id": 4,
+        "tipo": "Madeira"
+      },
+      {
+        "id": 5,
+        "tipo": "Acrílico"
+      }
+    ],
+    "optional": [
+      {
+        "id": 1,
+        "tipo": "Bolsa para Dados"
+      },
+      {
+        "id": 2,
+        "tipo": "Caixa para Dados"
+      },
+      {
+        "id": 3,
+        "tipo": "Dice Tower"
+      },
+      {
+        "id": 4,
+        "tipo": "Bom Dia"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "dices": [
+    {
+      "client": "Caio",
+      "number": "Conjunto Completo",
+      "color": "Azul",
+      "material": "Metálico",
+      "optional": [
+        "Bom Dia",
+        "Caixa para Dados",
+        "Dice Tower"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    }
+  ]
+}
