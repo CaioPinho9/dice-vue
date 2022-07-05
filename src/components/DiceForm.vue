@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>mensagem</p>
+    <Message :msg="msg" :normal="false" :success="success" v-show="msg" />
     <div>
       <form id="dice-form" @submit="createDice">
         <div class="input-container">
@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import Message from './Message.vue'
+
 export default {
   name: "DiceForm",
   data() {
@@ -60,6 +62,7 @@ export default {
       materials: null,
       optional: [],
       msg: null,
+      success: null,
       bomDia: false
     }
   },
@@ -107,6 +110,8 @@ export default {
       const dataJson = JSON.stringify(data)
 
       if (!this.checkError()) {
+        this.msg = "Não foi possível realizar o Pedido"
+        this.success = false
         return
       }
 
@@ -117,6 +122,11 @@ export default {
       })
 
       const res = await req.json()
+
+      this.msg = "Pedido Nº" + res.id + " realizado com sucesso"
+      this.success = true
+
+      setTimeout(() => this.msg = "", 5000)
 
       if (data.optional.includes("Bom Dia")) {
         this.bomDia = true
@@ -133,6 +143,9 @@ export default {
   },
   mounted() {
     this.getDetails()
+  },
+  components: {
+    Message
   }
   
 }

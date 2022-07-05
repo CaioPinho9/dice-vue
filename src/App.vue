@@ -42,8 +42,9 @@ export default {
     color: #fff;
   }
 
-  body {
+  html, body, #app {
     background-color: #8d2d00 ;
+    position: relative;
   }
 
 

@@ -150,8 +150,31 @@
         "Caixa para Dados",
         "Dice Tower"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
+    },
+    {
+      "client": "Brand",
+      "number": "d10",
+      "color": "Azul",
+      "material": "Vidro",
+      "optional": [
+        "Bolsa para Dados"
+      ],
+      "status": "Finalizado",
+      "id": 2
+    },
+    {
+      "client": "João",
+      "number": "d10",
+      "color": "Amarelo",
+      "material": "Acrílico",
+      "optional": [
+        "Bolsa para Dados",
+        "Bom Dia"
+      ],
+      "status": "Solicitado",
+      "id": 3
     }
   ]
 }
