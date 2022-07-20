@@ -1,6 +1,7 @@
 <template>
   <Message :msg="msg" :normal="normal" v-show="msg" />
   <div id="burger-table">
+    <!--Nome das colunas da tabela-->
     <div>
       <div id="burger-table-heading">
         <div class="order-id">#</div>
@@ -12,6 +13,7 @@
         <div>Ações:</div>
       </div>
     </div>
+    <!--Informações de cada coluna-->
     <div id="burger-table-rows">
       <div class="burger-table-row" v-for="dice in dices" :key="dice.id">
         <div class="order-number">{{ dice.id }}</div>
@@ -24,6 +26,7 @@
             <li v-for="(opcional, index) in dice.optional" :key="index">{{ opcional }}</li>
           </ul>
         </div>
+        <!--Selecionar para alterar o Status do pedido, :selected sincroniza os dados do Json e a tela-->
         <div id="select">
           <select name="status" class="status" @change="updateDice($event, dice.id)">
             <option v-for="s in status" :key="s.id" :value="s.tipo" :selected="dice.status == s.tipo">{{ s.tipo }}</option>
@@ -53,16 +56,18 @@ export default {
     Message
   },
   methods: {
+    //Recebe os dados dos dados do json
     async getDetails() {
       const req = await fetch("http://localhost:3000/dices")
 
       const data = await req.json()
 
       this.dices = data
-
+      //Recebe os dados de status do json
       this.getStatus()
     },
 
+    //Recebe os dados de status do json
     async getStatus() {
       const req = await fetch("http://localhost:3000/status")
 
@@ -70,6 +75,7 @@ export default {
 
       this.status = data
     },
+    //Deleta um dado de acordo com o id na tabela
     async deleteDice(id) {
       const req = await fetch('http://localhost:3000/dices/'+id, {
         method: "DELETE"
@@ -79,9 +85,11 @@ export default {
 
       this.getDetails()
       
+      //Envia uma mensagem de sucesso
       this.msg = "O pedido Nº"+id+" foi cancelado com sucesso"
       setTimeout(() => this.msg = "", 5000)
     },
+    //Atualiza os dados quando o status é alterado
     async updateDice(event, id) {
       const option = event.target.value
 
@@ -95,11 +103,13 @@ export default {
 
       const res = await req.json()
 
+      //Envia uma mensagem de sucesso
       this.msg = "O pedido Nº"+id+" foi atualizado para \""+option+"\" com sucesso"
       setTimeout(() => this.msg = "", 5000)
 
     }
   },
+  //Ao inciar o componente, ele recebe os dados
   mounted() {
     this.getDetails()
   }

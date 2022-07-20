@@ -2,6 +2,7 @@
   <div id="main-banner">
     <div>
       <h1>Dice Forge</h1>
+      <!--Runa escrito Dice Forge-->
       <h1 id="runa">&#5854;&#5825;&#5811;&#5846; &#5792;&#5801;&#5809;&#5815;&#5846;</h1>
     </div>
   </div>
@@ -15,6 +16,7 @@ export default {
 
 <style scoped>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&display=swap');
+  
   #main-banner {
     background-image: url('/public/img/dice.png');
     background-position: 0-100px;
