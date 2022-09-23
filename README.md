@@ -1,4 +1,4 @@
-# vue-burger
+# vue-dice
 
 ## Project setup
 ```
