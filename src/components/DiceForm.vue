@@ -117,7 +117,7 @@ export default {
 
       const req = await fetch("http://localhost:3000/dices", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*"},
         body: dataJson
       })
 
