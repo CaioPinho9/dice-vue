@@ -68,7 +68,9 @@ export default {
   },
   methods: {
     async getDetails() {
-      const req = await fetch("http://localhost:3000/details")
+      const req = await fetch("http://localhost:3000/details", {
+        headers: {"Access-Control-Allow-Origin": "*"},
+      })
       const data = await req.json()
 
       this.numbers = data.numbers
